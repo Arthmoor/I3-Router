@@ -18,19 +18,29 @@ If you are instead looking for somewhere to connect an existing client, I would 
 connecting to the *dalet router instead. *dalet is also known by most as the "main" router
 and averages some 100 connections daily.
 
-Changes were made for version 2.0:
+Changes for version 2.0
+-----------------------
 
 Compiler changed to g++
 
 The TRUE/FALSE macros have been swapped with actual true/false booleans.
+
 The UMIN/UMAX/URANGE macros have been removed and the one place that used UMAX is now using std::max instead.
+
 The LOWER and UPPER macros have been removed.
+
 The random number generator has been swapped to use the std::mt19937 algorithm (Mersenne Twister).
+
 All compiler errors and warnings for GCC 13.3 using -std=c++23 have been addressed.
+
 Time handling uses std::chrono instead of time_t for better precision.
+
 All printf style functions use std::format instead.
+
 All uses of the LINK/UNLINK macros eliminated. Lists now use std::list.
+
 All file I/O is now using std::ifstream and std::ofstream.
+
 Made the I3_read_packet() function safer. It used to attempt to ingest infinitely large packets.
 
 Installation
