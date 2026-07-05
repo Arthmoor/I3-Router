@@ -60,4 +60,4 @@ Installation
 
 6. That's it. You should now be able to have a client connect to it to make sure it's working.
 
-Do you need a client for a DIKU derived codebase? You can find that here:
+Do you need a client for a DIKU derived codebase? You can find that here: https://github.com/Arthmoor/I3-DIKU-Client
